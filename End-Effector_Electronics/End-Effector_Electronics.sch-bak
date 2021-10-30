@@ -68,7 +68,7 @@ F0 "5V Supply" 50
 F1 "5v_Supply.sch" 50
 F2 "Vin-" I L 4900 4600 50 
 F3 "Vin+" I L 4900 4250 50 
-F4 "Vout-" I R 5700 4600 50 
-F5 "Vout+" I R 5700 4250 50 
+F4 "Vout-" O R 5700 4600 50 
+F5 "Vout+" O R 5700 4250 50 
 $EndSheet
 $EndSCHEMATC
