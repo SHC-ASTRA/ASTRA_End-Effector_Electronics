@@ -17,6 +17,22 @@ X SCL 4 -250 -150 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# ASTRA_Library_XT60_Battery_Connector
+#
+DEF ASTRA_Library_XT60_Battery_Connector BT 0 40 N N 1 F N
+F0 "BT" 0 0 50 H V C CNN
+F1 "ASTRA_Library_XT60_Battery_Connector" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 100 50 0 0 0 + Normal 0 C C
+T 0 0 -100 50 0 0 0 - Normal 0 C C
+P 7 0 1 0 -100 150 100 150 100 -100 50 -150 -50 -150 -100 -100 -100 150 f
+X Neg 1 0 -250 100 U 50 50 1 1 I
+X Pos 2 0 250 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Connector_Raspberry_Pi_2_3
 #
 DEF Connector_Raspberry_Pi_2_3 J 0 40 Y Y 1 F N
@@ -331,6 +347,21 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

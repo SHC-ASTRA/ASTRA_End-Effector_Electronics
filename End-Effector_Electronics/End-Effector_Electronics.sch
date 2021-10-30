@@ -50,14 +50,14 @@ $EndComp
 Text Notes 7800 1850 0    50   ~ 0
 BNO055
 $Sheet
-S 4900 4050 800  750 
+S 4300 3950 800  750 
 U 617D965B
 F0 "5V Supply" 50
 F1 "5v_Supply.sch" 50
-F2 "Vin-" I L 4900 4600 50 
-F3 "Vin+" I L 4900 4250 50 
-F4 "Vout-" O R 5700 4600 50 
-F5 "Vout+" O R 5700 4250 50 
+F2 "Vin-" I L 4300 4500 50 
+F3 "Vin+" I L 4300 4150 50 
+F4 "Vout-" O R 5100 4500 50 
+F5 "Vout+" O R 5100 4150 50 
 $EndSheet
 $Comp
 L Device:R_Small R?
@@ -291,11 +291,214 @@ $Comp
 L Connector:Raspberry_Pi_2_3 J?
 U 1 1 617E71E0
 P 2150 2600
-F 0 "J?" H 2150 4081 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 2150 3990 50  0000 C CNN
+F 0 "J?" H 2500 3950 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2800 3850 50  0000 C CNN
 F 2 "" H 2150 2600 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2150 2600 50  0001 C CNN
 	1    2150 2600
 	1    0    0    -1  
 $EndComp
+$Comp
+L ASTRA_Library:XT60_Battery_Connector BT?
+U 1 1 617EE7FC
+P 3300 5050
+F 0 "BT?" H 3428 5096 50  0000 L CNN
+F 1 "XT60_Battery_Connector" H 3428 5005 50  0000 L CNN
+F 2 "" H 3300 5050 50  0001 C CNN
+F 3 "" H 3300 5050 50  0001 C CNN
+	1    3300 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 617EF1D8
+P 3300 4800
+F 0 "#PWR?" H 3300 4650 50  0001 C CNN
+F 1 "+BATT" H 3315 4973 50  0000 C CNN
+F 2 "" H 3300 4800 50  0001 C CNN
+F 3 "" H 3300 4800 50  0001 C CNN
+	1    3300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 617EF57A
+P 3300 5300
+F 0 "#PWR?" H 3300 5050 50  0001 C CNN
+F 1 "GND" H 3305 5127 50  0000 C CNN
+F 2 "" H 3300 5300 50  0001 C CNN
+F 3 "" H 3300 5300 50  0001 C CNN
+	1    3300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 617EF8D6
+P 4050 4150
+F 0 "#PWR?" H 4050 4000 50  0001 C CNN
+F 1 "+BATT" H 4065 4323 50  0000 C CNN
+F 2 "" H 4050 4150 50  0001 C CNN
+F 3 "" H 4050 4150 50  0001 C CNN
+	1    4050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4150 4050 4150
+$Comp
+L power:GND #PWR?
+U 1 1 617F04C2
+P 4050 4500
+F 0 "#PWR?" H 4050 4250 50  0001 C CNN
+F 1 "GND" H 4055 4327 50  0000 C CNN
+F 2 "" H 4050 4500 50  0001 C CNN
+F 3 "" H 4050 4500 50  0001 C CNN
+	1    4050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4500 4300 4500
+$Comp
+L power:+12V #PWR?
+U 1 1 617F1DE8
+P 3900 1750
+F 0 "#PWR?" H 3900 1600 50  0001 C CNN
+F 1 "+12V" H 3915 1923 50  0000 C CNN
+F 2 "" H 3900 1750 50  0001 C CNN
+F 3 "" H 3900 1750 50  0001 C CNN
+	1    3900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1750 3900 1750
+$Comp
+L power:GND #PWR?
+U 1 1 617F2B7C
+P 3900 1850
+F 0 "#PWR?" H 3900 1600 50  0001 C CNN
+F 1 "GND" H 3905 1677 50  0000 C CNN
+F 2 "" H 3900 1850 50  0001 C CNN
+F 3 "" H 3900 1850 50  0001 C CNN
+	1    3900 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1850 4400 1850
+$Comp
+L power:+5V #PWR?
+U 1 1 617F3BF6
+P 5350 4150
+F 0 "#PWR?" H 5350 4000 50  0001 C CNN
+F 1 "+5V" H 5365 4323 50  0000 C CNN
+F 2 "" H 5350 4150 50  0001 C CNN
+F 3 "" H 5350 4150 50  0001 C CNN
+	1    5350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4150 5100 4150
+$Comp
+L power:GND #PWR?
+U 1 1 617F487C
+P 5350 4500
+F 0 "#PWR?" H 5350 4250 50  0001 C CNN
+F 1 "GND" H 5355 4327 50  0000 C CNN
+F 2 "" H 5350 4500 50  0001 C CNN
+F 3 "" H 5350 4500 50  0001 C CNN
+	1    5350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4500 5100 4500
+$Comp
+L power:+5V #PWR?
+U 1 1 617F6C42
+P 2000 1150
+F 0 "#PWR?" H 2000 1000 50  0001 C CNN
+F 1 "+5V" H 2015 1323 50  0000 C CNN
+F 2 "" H 2000 1150 50  0001 C CNN
+F 3 "" H 2000 1150 50  0001 C CNN
+	1    2000 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1150 2050 1150
+Wire Wire Line
+	2050 1150 2050 1300
+Wire Wire Line
+	2000 1150 1950 1150
+Wire Wire Line
+	1950 1150 1950 1300
+Connection ~ 2000 1150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 617F96F6
+P 2300 1150
+F 0 "#PWR?" H 2300 1000 50  0001 C CNN
+F 1 "+3.3V" H 2315 1323 50  0000 C CNN
+F 2 "" H 2300 1150 50  0001 C CNN
+F 3 "" H 2300 1150 50  0001 C CNN
+	1    2300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1300 2350 1150
+Wire Wire Line
+	2350 1150 2300 1150
+Wire Wire Line
+	2300 1150 2250 1150
+Wire Wire Line
+	2250 1150 2250 1300
+Connection ~ 2300 1150
+$Comp
+L power:GND #PWR?
+U 1 1 617FBBC2
+P 2100 4100
+F 0 "#PWR?" H 2100 3850 50  0001 C CNN
+F 1 "GND" H 2105 3927 50  0000 C CNN
+F 2 "" H 2100 4100 50  0001 C CNN
+F 3 "" H 2100 4100 50  0001 C CNN
+	1    2100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4100 2100 3900
+Wire Wire Line
+	2100 3900 2050 3900
+Connection ~ 1850 3900
+Wire Wire Line
+	1850 3900 1750 3900
+Connection ~ 1950 3900
+Wire Wire Line
+	1950 3900 1850 3900
+Connection ~ 2050 3900
+Wire Wire Line
+	2050 3900 1950 3900
+Wire Wire Line
+	2450 3900 2350 3900
+Connection ~ 2100 3900
+Connection ~ 2150 3900
+Wire Wire Line
+	2150 3900 2100 3900
+Connection ~ 2250 3900
+Wire Wire Line
+	2250 3900 2150 3900
+Connection ~ 2350 3900
+Wire Wire Line
+	2350 3900 2250 3900
+Wire Wire Line
+	4400 1650 4350 1650
+Wire Wire Line
+	4400 1950 4350 1950
+Text Label 4350 1650 2    50   ~ 0
+ServoRX
+Text Label 4350 1950 2    50   ~ 0
+ServoTX
+Text Label 1150 1700 2    50   ~ 0
+ServoRX
+Wire Wire Line
+	1150 1700 1350 1700
+Wire Wire Line
+	1350 1800 1150 1800
+Text Label 1150 1800 2    50   ~ 0
+ServoTX
 $EndSCHEMATC
