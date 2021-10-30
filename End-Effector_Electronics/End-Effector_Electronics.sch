@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:End-Effector_Electronics-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,18 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L End-Effector_Electronics-rescue:RASPBERRYPI-40-PIN-GPIO_SMT-SparkFun-Connectors-End-Effector_Electronics-rescue-End-Effector_Electronics-rescue J?
-U 1 1 61744292
-P 1900 2750
-F 0 "J?" H 1900 4210 45  0000 C CNN
-F 1 "RASPBERRYPI-40-PIN-GPIO_SMT" H 1900 4126 45  0000 C CNN
-F 2 "2X20_SHROUDED_SMT" H 1900 4050 20  0001 C CNN
-F 3 "" H 1900 2750 50  0001 C CNN
-F 4 "CONN-13143" H 1900 4031 60  0000 C CNN "Field4"
-	1    1900 2750
-	1    0    0    -1  
-$EndComp
 $Comp
 L Project_Library:LynxServo J?
 U 1 1 61745589
@@ -259,12 +246,12 @@ Wire Wire Line
 Wire Wire Line
 	7750 2200 7450 2200
 Wire Wire Line
-	2500 1650 2700 1650
+	2950 2000 3150 2000
 Wire Wire Line
-	2500 1750 2700 1750
-Text Label 2700 1650 0    50   ~ 0
+	2950 2100 3150 2100
+Text Label 3150 2000 0    50   ~ 0
 SDA
-Text Label 2700 1750 0    50   ~ 0
+Text Label 3150 2100 0    50   ~ 0
 SCL
 Text Label 7450 2100 2    50   ~ 0
 SCL
@@ -300,4 +287,15 @@ Wire Wire Line
 	7750 2300 7150 2300
 Wire Wire Line
 	7150 2300 7150 2250
+$Comp
+L Connector:Raspberry_Pi_2_3 J?
+U 1 1 617E71E0
+P 2150 2600
+F 0 "J?" H 2150 4081 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2150 3990 50  0000 C CNN
+F 2 "" H 2150 2600 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2150 2600 50  0001 C CNN
+	1    2150 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
