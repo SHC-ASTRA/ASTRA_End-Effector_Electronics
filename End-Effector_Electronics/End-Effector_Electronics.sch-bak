@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:End-Effector_Electronics-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L End-Effector_Electronics-rescue:RASPBERRYPI-40-PIN-GPIO_SMT-SparkFun-Connectors J?
+L End-Effector_Electronics-rescue:RASPBERRYPI-40-PIN-GPIO_SMT-SparkFun-Connectors-End-Effector_Electronics-rescue J?
 U 1 1 61744292
 P 1900 2750
 F 0 "J?" H 1900 4210 45  0000 C CNN
@@ -60,4 +59,16 @@ F 3 "" H 8000 1950 50  0001 C CNN
 	1    8000 1950
 	1    0    0    -1  
 $EndComp
+Text Notes 7800 1850 0    50   ~ 0
+BNO055
+$Sheet
+S 4900 4050 800  750 
+U 617D965B
+F0 "5V Supply" 50
+F1 "5v_Supply.sch" 50
+F2 "Vin-" I L 4900 4600 50 
+F3 "Vin+" I L 4900 4250 50 
+F4 "Vout-" I R 5700 4600 50 
+F5 "Vout+" I R 5700 4250 50 
+$EndSheet
 $EndSCHEMATC
