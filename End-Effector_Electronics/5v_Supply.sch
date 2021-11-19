@@ -29,6 +29,7 @@ F 0 "U3" H 5450 4467 50  0000 C CNN
 F 1 "LM22676MR-5" H 5450 4376 50  0000 C CNN
 F 2 "Package_SO:TI_SO-PowerPAD-8" H 5450 4450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm22676.pdf" H 5500 4000 50  0001 C CNN
+F 4 "LM22676MR-5.0/NOPB-ND" H 5450 4000 50  0001 C CNN "Digikey Part Num"
 	1    5450 4000
 	1    0    0    -1  
 $EndComp
