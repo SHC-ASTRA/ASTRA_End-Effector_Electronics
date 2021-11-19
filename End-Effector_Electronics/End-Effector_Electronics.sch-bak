@@ -296,8 +296,9 @@ U 1 1 617E71E0
 P 2150 2600
 F 0 "J1" H 2500 3950 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 2800 3850 50  0000 C CNN
-F 2 "" H 2150 2600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2150 2600 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2150 2600 50  0001 C CNN
+F 4 "1528-1785-ND" H 2150 2600 50  0001 C CNN "Digikey Part Num"
 	1    2150 2600
 	1    0    0    -1  
 $EndComp
