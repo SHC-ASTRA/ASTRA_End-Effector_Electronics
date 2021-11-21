@@ -43,7 +43,7 @@ U 1 1 617F930F
 P 8000 1950
 F 0 "J4" H 8178 1696 50  0000 L CNN
 F 1 "QWIIC_Generic_Conn" H 8178 1605 50  0000 L CNN
-F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 8000 1950 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 8000 1950 50  0001 C CNN
 F 3 "" H 8000 1950 50  0001 C CNN
 F 4 "n/a" H 8000 1950 50  0001 C CNN "Digikey Part Num"
 	1    8000 1950
@@ -301,7 +301,7 @@ U 1 1 617E71E0
 P 2150 2600
 F 0 "J1" H 2500 3950 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 2800 3850 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2150 2600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical_SMD" H 2150 2600 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2150 2600 50  0001 C CNN
 F 4 "1528-1785-ND" H 2150 2600 50  0001 C CNN "Digikey Part Num"
 	1    2150 2600
@@ -820,4 +820,15 @@ F 4 "n/a" H 10000 1400 50  0001 C CNN "Digikey Part Num"
 $EndComp
 Text Label 1350 2000 2    50   ~ 0
 12V_Disable
+Text Label 1950 1150 0    50   ~ 0
+5V_RPI
+Wire Wire Line
+	2050 1300 2050 1200
+Wire Wire Line
+	2050 1200 1950 1200
+Wire Wire Line
+	1950 1200 1950 1150
+Wire Wire Line
+	1950 1200 1950 1300
+Connection ~ 1950 1200
 $EndSCHEMATC
