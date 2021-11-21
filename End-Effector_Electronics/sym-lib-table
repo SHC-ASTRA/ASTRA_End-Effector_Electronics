@@ -4,4 +4,5 @@
   (lib (name ASTRA_Library)(type Legacy)(uri ${KIPRJMOD}/ASTRA_Library.lib)(options "")(descr ""))
   (lib (name End-Effector_Electronics-cache)(type Legacy)(uri ${KIPRJMOD}/End-Effector_Electronics-cache.lib)(options "")(descr ""))
   (lib (name MainElectronicsLib)(type Legacy)(uri ${KIPRJMOD}/MainElectronicsLib.lib)(options "")(descr ""))
+  (lib (name ArmElectronics_Library)(type Legacy)(uri C:/Users/Thomas/Documents/GitHub/Arm-Electronics/ArmElectronics/ArmElectronics_Library.lib)(options "")(descr ""))
 )
