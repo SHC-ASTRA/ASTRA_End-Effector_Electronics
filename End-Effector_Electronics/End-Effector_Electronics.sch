@@ -102,7 +102,7 @@ $EndComp
 Wire Wire Line
 	8600 1050 8600 1000
 Wire Wire Line
-	8600 1000 8050 1000
+	8600 1000 8300 1000
 Wire Wire Line
 	8900 1050 8900 1000
 Wire Wire Line
@@ -1288,4 +1288,25 @@ Text Label 6900 4800 0    50   ~ 0
 LED
 Text Label 1000 2900 2    50   ~ 0
 LED
+Wire Wire Line
+	8050 1100 8300 1100
+Wire Wire Line
+	8300 1100 8300 1000
+Connection ~ 8300 1000
+Wire Wire Line
+	8300 1000 8050 1000
+$Comp
+L power:GND #PWR?
+U 1 1 62308E65
+P 6950 1400
+F 0 "#PWR?" H 6950 1150 50  0001 C CNN
+F 1 "GND" H 6955 1227 50  0000 C CNN
+F 2 "" H 6950 1400 50  0001 C CNN
+F 3 "" H 6950 1400 50  0001 C CNN
+	1    6950 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1400 7050 1400
+NoConn ~ 8050 1300
 $EndSCHEMATC
